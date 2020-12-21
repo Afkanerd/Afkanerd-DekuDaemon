@@ -705,7 +705,7 @@ Modem::~Modem() {
 	if( this->mysqlConnection.is_init() )  {
 		string unplugged_query = "UPDATE __DEKU__.MODEMS SET POWER = 'not_plugged' WHERE IMEI = '" + this->imei + "'";
 		try {
-			this->mysqlConnection.query( unplugged_query );
+			// this->mysqlConnection.query( unplugged_query );
 		}
 		catch( std::exception& e) {
 			logger::logger(__FUNCTION__, e.what());

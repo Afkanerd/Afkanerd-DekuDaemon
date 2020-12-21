@@ -28,17 +28,19 @@
 > `sudo pacman -S cpputest`
 
 ###### VARIABLES OF CONFIGURATION FILE (.ENV)
-```env
+```bash
+# Do no put quotes, do not end with /
 - DIR_ISP=""
 - DIR_REQUEST_FILE=""
 - DIR_SUCCESS=""
-- DIR_SCRIPTS="
+- DIR_SCRIPTS=""
 - DIR_ERROR=""
 - STD_NAME_REQUEST_FILE=""
 - STD_NAME_WHITELIST_FILE=""
 - MYSQL_SERVER=""
 - MYSQL_USER=""
 - MYSQL_PASSWORD=""
+- MYSQL_DATABASE=""
 - ISP_EXCHANGE=ISP_NAME{OTHER_ISP_NAMES,,}:ISP_NAME_2{OTHER_ISP_NAMES,,}
 ```
 ##### How to build and run
